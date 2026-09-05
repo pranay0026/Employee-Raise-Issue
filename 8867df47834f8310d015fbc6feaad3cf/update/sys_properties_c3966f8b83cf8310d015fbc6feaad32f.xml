@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>If true, portal css would be in rem units</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.service_portal.resize_text.employee_request.enable_rem_conversion</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:49:59</sys_created_on>
+        <sys_id>c3966f8b83cf8310d015fbc6feaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.employee_request.enable_rem_conversion</sys_name>
+        <sys_package display_value="Employee Center" source="x_2079701_employ_0">8867df47834f8310d015fbc6feaad3cf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Center">8867df47834f8310d015fbc6feaad3cf</sys_scope>
+        <sys_update_name>sys_properties_c3966f8b83cf8310d015fbc6feaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 16:49:59</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=c3966f8b83cf8310d015fbc6feaad32f"/>
+</record_update>

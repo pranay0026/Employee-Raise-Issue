@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="What is Subcategory">67b3ab8383cf8310d015fbc6feaad387</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:38:38</sys_created_on>
+        <sys_id>90f3634783cf8310d015fbc6feaad3d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Laptop</sys_name>
+        <sys_package display_value="Employee Center" source="x_2079701_employ_0">8867df47834f8310d015fbc6feaad3cf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Center">8867df47834f8310d015fbc6feaad3cf</sys_scope>
+        <sys_update_name>question_choice_90f3634783cf8310d015fbc6feaad3d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 16:40:02</sys_updated_on>
+        <text>Laptop</text>
+        <value>laptop</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=90f3634783cf8310d015fbc6feaad3d8"/>
+</record_update>

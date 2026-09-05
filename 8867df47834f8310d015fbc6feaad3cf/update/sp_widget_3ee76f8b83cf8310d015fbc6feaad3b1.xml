@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, $location) {
+  var c = this;
+
+
+  var RECORD_PRODUCER_SYS_ID = '8400630f838f8310d015fbc6feaad382';
+
+
+  c.openRecordProducer = function () {
+    $location.url(
+      'sp?id=sc_cat_item&sys_id=' + RECORD_PRODUCER_SYS_ID
+    );
+  };
+} ]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* ===============================
+   RAISE TICKET – PREMIUM WIDGET
+   =============================== */
+
+
+.raise-ticket-widget {
+  display: block;
+  height: 100%;
+  min-height: 280px;
+  border-radius: 16px;
+  background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984');
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Floating 3D effect */
+.raise-ticket-widget:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Overlay with gradient */
+.raise-ticket-widget .overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(11, 94, 215, 0.85),
+    rgba(0, 0, 0, 0.75)
+  );
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 0.4s ease;
+}
+
+
+/* Text styles */
+.raise-ticket-widget h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+
+.raise-ticket-widget p {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-bottom: 18px;
+}
+
+
+/* Premium button */
+.raise-ticket-widget .premium-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b5ed7;
+  background: linear-gradient(135deg, #ffffff, #e9f1ff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+
+/* Button hover */
+.raise-ticket-widget:hover .premium-btn {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #e9f1ff, #ffffff);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Soft glow animation */
+.raise-ticket-widget::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.18),
+    transparent 60%
+  );
+  animation: floatGlow 10s infinite linear;
+  pointer-events: none;
+}
+
+
+/* Glow motion */
+@keyframes floatGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}.</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>link_redirect</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Link redirect</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:55:41</sys_created_on>
+        <sys_id>3ee76f8b83cf8310d015fbc6feaad3b1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Link redirect</sys_name>
+        <sys_package display_value="Employee Center" source="x_2079701_employ_0">8867df47834f8310d015fbc6feaad3cf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Center">8867df47834f8310d015fbc6feaad3cf</sys_scope>
+        <sys_update_name>sp_widget_3ee76f8b83cf8310d015fbc6feaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 17:02:49</sys_updated_on>
+        <template><![CDATA[<a
+  href="javascript:void(0)"
+  class="raise-ticket-widget"
+  ng-click="c.openRecordProducer()"
+>
+  <div class="overlay">
+    <h2>Raise an Issue</h2>
+    <p>Submit your request or complaint</p>
+
+
+    <span class="premium-btn">
+      Raise Ticket →
+    </span>
+  </div>
+</a> .]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3ee76f8b83cf8310d015fbc6feaad3b1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:55:42</sys_created_on>
+        <sys_id>3ee7ab4f83cf8310d015fbc6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 16:55:42</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* ===============================
+   COMMERCIAL WIDGET – ALL IN ONE
+   =============================== */
+
+
+.commercial-widget {
+  background: linear-gradient(
+    135deg,
+    #1db954 0%,
+    #ffffff 50%,
+    #0b5ed7 100%
+  );
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* Hover floating card */
+.commercial-widget:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Floating animated background glow */
+.commercial-widget::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    transparent 60%
+  );
+  animation: floatBg 8s infinite linear;
+  pointer-events: none;
+}
+
+
+/* Floating background animation */
+@keyframes floatBg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Floating heading text */
+.commercial-widget h2 {
+  color: #0b5ed7;
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+
+/* Heading animation */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Paragraph styling */
+.commercial-widget p {
+  color: #222;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+
+/* List styling */
+.commercial-widget ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/* Animated list items */
+.commercial-widget ul li {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #222;
+  opacity: 0;
+  animation: slideIn 0.8s ease forwards;
+}
+
+
+/* Staggered animation */
+.commercial-widget ul li:nth-child(1) { animation-delay: 0.2s; }
+.commercial-widget ul li:nth-child(2) { animation-delay: 0.4s; }
+.commercial-widget ul li:nth-child(3) { animation-delay: 0.6s; }
+.commercial-widget ul li:nth-child(4) { animation-delay: 0.8s; }
+
+
+/* Slide-in effect */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* ===============================
+   OPTIONAL CROSS-WIDGET EFFECT
+   (Both widgets in same row)
+   =============================== */
+
+
+.row:hover .commercial-widget,
+.row:hover .raise-ticket-widget {
+  transform: translateY(-5px) scale(1.01);
+} .
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>commercial_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Commercial widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:53:49</sys_created_on>
+        <sys_id>d777eb0f83cf8310d015fbc6feaad3bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Commercial widget</sys_name>
+        <sys_package display_value="Employee Center" source="x_2079701_employ_0">8867df47834f8310d015fbc6feaad3cf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Center">8867df47834f8310d015fbc6feaad3cf</sys_scope>
+        <sys_update_name>sp_widget_d777eb0f83cf8310d015fbc6feaad3bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 16:54:56</sys_updated_on>
+        <template><![CDATA[<div class="commercial-widget">
+  <h2>Our Commercial Services</h2>
+  <p>
+    We provide end-to-end IT services, support, and issue resolution
+    through a streamlined Service Portal experience.
+  </p>
+  <ul>
+    <li>✔ 24/7 Customer Support</li>
+    <li>✔ Faster Issue Resolution</li>
+    <li>✔ Transparent Tracking</li>
+    <li>✔ Secure & Reliable</li>
+  </ul>
+</div>.
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d777eb0f83cf8310d015fbc6feaad3bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-05 16:53:49</sys_created_on>
+        <sys_id>9377eb0f83cf8310d015fbc6feaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-05 16:53:49</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
